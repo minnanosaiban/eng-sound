@@ -9,8 +9,8 @@ import type {
 export const SESSION_KEY = "english-sound-selector:session";
 
 export const RATES: readonly Rate[] = [0.5, 0.75, 1.0];
-export const PAUSES: readonly PauseMilliseconds[] = [500, 1000, 1500, 2000];
-export const REPEATS: readonly RepeatCount[] = [1, 3, 5];
+export const PAUSES: readonly PauseMilliseconds[] = [500, 1000, 1500, 2000, 3000, 4000, 5000];
+export const REPEATS: readonly RepeatCount[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 export type StoredSession = {
   sourceText: string;

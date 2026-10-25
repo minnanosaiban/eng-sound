@@ -83,7 +83,7 @@ describe("sessionStore", () => {
         inputMode: "edit",
         rate: 2,
         pauseMilliseconds: 1500,
-        repeatCount: 4,
+        repeatCount: 11,
       }),
     );
     const s = loadSession();

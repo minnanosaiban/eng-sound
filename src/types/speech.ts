@@ -16,8 +16,8 @@ export type SpeakResult =
   | { status: "error"; error: string };
 
 export type Rate = 0.5 | 0.75 | 1.0;
-export type PauseMilliseconds = 500 | 1000 | 1500 | 2000;
-export type RepeatCount = 1 | 3 | 5;
+export type PauseMilliseconds = 500 | 1000 | 1500 | 2000 | 3000 | 4000 | 5000;
+export type RepeatCount = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 export type InputMode = "edit" | "select";
 export type PlaybackKind = "none" | "selection" | "item" | "list" | "fullText";
 

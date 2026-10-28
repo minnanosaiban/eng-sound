@@ -37,9 +37,9 @@ function createId(): string {
 export default function App() {
   const [initial] = useState(() => loadSession());
   const [sourceText, setSourceText] = useState(initial?.sourceText ?? SAMPLE_TEXT);
-  // 初期サンプルを表示するので選択モードで始める（本文が空なら編集モード）
+  // 初回は貼り付けてすぐ使えるよう編集モードで始める
   const [inputMode, setInputMode] = useState<InputMode>(
-    initial ? initial.inputMode : "select",
+    initial ? initial.inputMode : "edit",
   );
   const [selection, setSelection] = useState<TextSelection | null>(null);
   const [speechItems, setSpeechItems] = useState<SpeechItem[]>(initial?.speechItems ?? []);
